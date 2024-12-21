@@ -1,0 +1,56 @@
+.admin-component_container {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--background_color_body);
+  display: flex;
+  align-items: center;
+  color: var(--body_color);
+  .container {
+    .row {
+      .title {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .table_wrapper {
+        padding: 0;
+        background-color: var(--film_wrapper_button);
+        border-radius: 0.5rem;
+        .table {
+          color: var(--body_color);
+          border: none !important;
+          tbody {
+            tr {
+              .username {
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                max-width: 100px !important;
+              }
+              text-align: center;
+              .action_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                .btn-outline-success {
+                  color: var(--body_color);
+                  border: 1px solid var(--body_color);
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+              }
+              &:hover {
+                color: var(--body_color) !important;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

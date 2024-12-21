@@ -1,0 +1,64 @@
+.sign-up_container {
+  background-color: var(--background_color_body);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .form-sign-up_wrapper {
+    background-color: var(--film_wrapper_button);
+    color: var(--body_color);
+    padding: 1rem;
+    width: 40vw;
+    .row {
+      .button_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        button {
+          width: 50%;
+          border: 1px solid var(--film_info_border);
+        }
+        .btn_back-home {
+          color: var(--body_color);
+          background-color: var(--film_button_next);
+        }
+        .btn_sign-up {
+          font-weight: 700;
+          color: var(--body_color);
+          background-color: var(--button_color);
+        }
+      }
+      .title {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .form-group {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sign-up_container {
+    .form-sign-up_wrapper {
+      width: 90vw;
+      .row {
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sign-up_container {
+    .form-sign-up_wrapper {
+      width: 80vw;
+      .row {
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.user-component_container {
+  .dropdown {
+    i {
+      padding: 0.5rem;
+      background-color: transparent;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: rgba(#fff, 0.5);
+        cursor: pointer;
+      }
+    }
+  }
+}

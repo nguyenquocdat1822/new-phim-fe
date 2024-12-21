@@ -1,0 +1,43 @@
+.film-info-container {
+  padding-bottom: 1rem;
+  .film-info-mobile {
+    display: none;
+  }
+  .comment_wrapper {
+    padding: 0;
+    .row {
+      .title {
+        color: var(--body_color);
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .col-12 {
+        background-color: var(--film_wrapper_button);
+        border-radius: 0.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .film-info-container {
+    .film-info-mobile {
+      display: block;
+    }
+
+    .film-info-pc {
+      display: none;
+    }
+    .comment_wrapper {
+      padding: 1.5rem !important;
+      .row {
+        .col-12 {
+          background-color: var(--film_wrapper_button);
+          border-radius: 0.5rem;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

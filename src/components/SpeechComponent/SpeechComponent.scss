@@ -1,0 +1,82 @@
+.speech-component_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  .voice-component_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    .header_modal {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      margin-bottom: 1rem;
+      .btn-close {
+        background-color: #fff !important;
+        color: #fff !important;
+      }
+    }
+    .speech_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .title {
+        text-align: center;
+        width: 100%;
+        color: #fff;
+      }
+
+      .speech-wave {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        background-color: red;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        &.active {
+          animation: pulse 1s infinite;
+        }
+        i {
+          color: #fff;
+          // font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .speech-component_container {
+    .voice-component_wrapper {
+      width: 80vw;
+    }
+  }
+}

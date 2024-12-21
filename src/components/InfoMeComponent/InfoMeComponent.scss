@@ -1,0 +1,99 @@
+.info-me-container {
+  margin-top: 1rem;
+  .row {
+    .content-left {
+      color: var(--body_color);
+      // display: none;
+      .information {
+        text-align: justify;
+        a {
+          color: var(--film_highlight_color);
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 600;
+          &:hover {
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+        .info {
+          // text-indent: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+    .content-right {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0 3rem;
+      .category {
+        color: var(--body_color);
+        // text-align: center;
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .genres {
+          margin-top: 0.4rem;
+          padding: 0;
+          list-style-type: none;
+
+          .genre-item {
+            cursor: pointer;
+            line-height: 1.5;
+            font-size: 16px;
+            color: var(--film_highlight_color);
+            font-weight: 600;
+            transition: all 0.3s linear;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .info-me-container {
+    // margin-top: 1rem;
+    .row {
+      .content-left {
+        display: none;
+      }
+      .content-right {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 3rem;
+        .category {
+          color: var(--body_color);
+          // text-align: center;
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          .genres {
+            margin-top: 0.4rem;
+            padding: 0;
+            list-style-type: none;
+
+            .genre-item {
+              cursor: pointer;
+              line-height: 1.5;
+              font-size: 16px;
+              color: var(--film_highlight_color);
+              font-weight: 600;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}
